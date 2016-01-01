@@ -37,6 +37,3 @@ def run():
 
     rtxyz = Raster2xyz()
     rtxyz.translate(input_raster, out_csv)
-
-if __name__ == "__main__":
-    run()
