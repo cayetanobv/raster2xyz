@@ -10,7 +10,7 @@ $ pip install .
 
 ## Usage
 ### Command Line
-```
+```bash
 $ raster2xyz [-h] input_raster out_csv
 
 positional arguments:
@@ -21,7 +21,7 @@ optional arguments:
   -h, --help    show this help message and exit
 ```
 ### Importing module
-```
+```python
 from raster2xyz.raster2xyz import Raster2xyz
 
 input_raster = "input_raster.tif"
