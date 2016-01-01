@@ -3,9 +3,33 @@ Alternative and faster (vectorized) version of gdal2xyz.py (https://svn.osgeo.or
 
 Builded on top of GDAL, Numpy and Pandas.
 
-## TODO
-Working in progress...
+## Install
+```
+$ pip install .
+```
 
+## Usage
+### Command Line
+```
+$ raster2xyz [-h] input_raster out_csv
+
+positional arguments:
+  input_raster  input_raster filepath
+  out_csv       out_csv filepath
+
+optional arguments:
+  -h, --help    show this help message and exit
+```
+### Importing module
+```
+from raster2xyz.raster2xyz import Raster2xyz
+
+input_raster = "input_raster.tif"
+out_csv = "/tmp/out_xyz.csv"
+
+rtxyz = Raster2xyz()
+rtxyz.translate(input_raster, out_csv)
+```
 ## Requirements
 - Numpy: http://www.numpy.org/
 - Pandas: http://pandas.pydata.org/
