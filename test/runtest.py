@@ -22,9 +22,9 @@
 from raster2xyz.raster2xyz import Raster2xyz
 
 def runtest():
-    input_raster = "./data/input_raster.tif"
-    # input_raster = "./data/h10_1005_3-2/h10_1005_3-2.tif"
-    out_csv = "/tmp/out_xyz.csv"
+    # input_raster = "./data/input_raster.tif"
+    input_raster = "./data/h10_1005_3-2/h10_1005_3-2.tif"
+    out_csv = "/tmp/out_xyz_2.csv"
 
     rtxyz = Raster2xyz()
     rtxyz.translate(input_raster, out_csv)
