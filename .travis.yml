@@ -10,6 +10,6 @@ before_install:
   - sudo apt-get install -y gdal-bin libgdal-dev
   - sudo apt-get install -y python-gdal
 install:
-  - "pip install ."
+  - "pip install . --no-deps"
 script:
   - "raster2xyz -h"
