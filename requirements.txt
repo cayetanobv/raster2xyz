@@ -1,0 +1,3 @@
+numpy
+pandas
+GDAL==1.10.0
