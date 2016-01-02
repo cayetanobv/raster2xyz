@@ -6,7 +6,8 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq python-numpy
   - sudo apt-get install -qq python-pip
-  - sudo apt-get install -y gdal-bin libgdal-dev
+  - sudo apt-get install -y gdal-bin libgdal1h libgdal-dev
+  - export CFLAGS=$(gdal-config --cflags)
 install:
   - "pip install -r requirements.txt"
 script:
