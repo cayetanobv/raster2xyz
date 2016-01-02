@@ -10,5 +10,6 @@ before_install:
   - export CFLAGS=$(gdal-config --cflags)
 install:
   - "pip install -r requirements.txt"
+  - "pip install ."
 script:
   - "raster2xyz -h"
