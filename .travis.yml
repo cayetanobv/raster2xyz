@@ -11,9 +11,10 @@ before_install:
   - export GDALVERSION=$(gdal-config --version)
 install:
   # - "pip install -r requirements.txt"
-  - "pip install numpy"
-  - "pip install pandas"
-  - "pip install GDAL==$GDALVERSION"
-  - "pip install ."
+  - pip install numpy
+  - pip install pandas
+  - pip install GDAL==$GDALVERSION
+  - pip install .
 script:
-  - "raster2xyz -h"
+  - raster2xyz -h
+  - cd test/ && python runtest.py 
