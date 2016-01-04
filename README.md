@@ -1,4 +1,7 @@
 # Raster2xyz
+
+[![Build Status](https://travis-ci.org/cayetanobv/raster2xyz.svg?branch=master)](https://travis-ci.org/cayetanobv/raster2xyz)
+
 Alternative and faster (vectorized) version of gdal2xyz.py (https://svn.osgeo.org/gdal/trunk/gdal/swig/python/scripts/gdal2xyz.py)
 
 Builded on top of GDAL, Numpy and Pandas.
