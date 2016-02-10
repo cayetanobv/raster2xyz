@@ -1,6 +1,7 @@
 # Raster2xyz
 
 [![Build Status](https://travis-ci.org/cayetanobv/raster2xyz.svg?branch=master)](https://travis-ci.org/cayetanobv/raster2xyz)
+[![PyPI version](https://badge.fury.io/py/raster2xyz.svg)](https://badge.fury.io/py/raster2xyz)
 
 Alternative and faster (vectorized) version of gdal2xyz.py (https://svn.osgeo.org/gdal/trunk/gdal/swig/python/scripts/gdal2xyz.py)
 
@@ -8,7 +9,7 @@ Builded on top of GDAL, Numpy and Pandas.
 
 ## Install
 ```
-$ pip install .
+$ pip install raster2xyz
 ```
 
 ## Usage
