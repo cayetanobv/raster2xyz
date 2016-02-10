@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
 # This file is part of Raster2xyz.
-# https://github.com/GeographicaGS
 
 # Licensed under the GPLv2 license:
 # https://www.gnu.org/licenses/gpl-2.0.txt
-# Copyright (c) 2015, Cayetano Benavent <cayetano.benavent@geographica.gs>
+# Copyright (c) 2015-2016, Cayetano Benavent <cayetano.benavent@geographica.gs>
 
 from setuptools import setup, find_packages
 
@@ -54,7 +53,6 @@ setup(
         'numpy',
         'pandas',
         'GDAL'
-
     ]
 
 )
