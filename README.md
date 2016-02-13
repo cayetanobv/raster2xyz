@@ -7,6 +7,9 @@ Alternative and faster (vectorized) version of gdal2xyz.py (https://svn.osgeo.or
 
 Builded on top of GDAL, Numpy and Pandas.
 
+input file: geotiff
+output file: xyz file
+
 ## Install
 ```
 $ pip install raster2xyz

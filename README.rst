@@ -8,6 +8,8 @@ Alternative and faster (vectorized) version of gdal2xyz.py
 
 Builded on top of GDAL, Numpy and Pandas.
 
+input file: geotiff output file: xyz file
+
 Install
 -------
 
