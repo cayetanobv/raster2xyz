@@ -8,7 +8,9 @@ Alternative and faster (vectorized) version of gdal2xyz.py
 
 Builded on top of GDAL, Numpy and Pandas.
 
-input file: geotiff output file: xyz file
+-  input file: `geotiff <https://en.wikipedia.org/wiki/GeoTIFF>`__
+-  output file: `ASCII Gridded
+   XYZ <http://www.gdal.org/frmt_xyz.html>`__
 
 Install
 -------
