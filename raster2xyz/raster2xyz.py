@@ -109,18 +109,23 @@ class Raster2xyz(object):
         except Exception as err:
             self.__logger.error("Error building XYZ data: {0}".format(err))
 
-    def __toXYZ(self, out_xyz, dataframe):
+    def __toXYZ(self, out_xyz, dataframe, rnd):
         """
         """
         try:
-            dataframe.to_csv(out_xyz, index=False)
+            if rnd:
+                rnd_x, rnd_y, rnd_z = rnd
+                rnd_df = dataframe.round({'x': rnd_x, 'y': rnd_y, 'z': rnd_z})
+                rnd_df.to_csv(out_xyz, index=False)
+            else:
+                dataframe.to_csv(out_xyz, index=False)
 
             self.__logger.info("New XYZ (csv file) created...")
 
         except Exception as err:
             self.__logger.error("Error creating XYZ file (csv): {0}".format(err))
 
-    def translate(self, input_raster, out_xyz, no_data=-9999, n_band=1):
+    def translate(self, input_raster, out_xyz, no_data=-9999, n_band=1, rnd=None):
         """
         """
         gtr, raster_values = self.__getRasterData(input_raster, n_band)
@@ -134,4 +139,4 @@ class Raster2xyz(object):
 
         df = self.__buildXyzData(gtr_x, gtr_y, data_vals)
 
-        self.__toXYZ(out_xyz, df)
+        self.__toXYZ(out_xyz, df, rnd)
