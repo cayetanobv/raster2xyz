@@ -1,7 +1,7 @@
 Raster2xyz
 ==========
 
-|Build Status| |PyPI version|
+|Build Status| |PyPI version| |Python versions|
 
 Alternative and faster (vectorized) version of gdal2xyz.py
 (https://svn.osgeo.org/gdal/trunk/gdal/swig/python/scripts/gdal2xyz.py)
@@ -75,3 +75,5 @@ option) any later version.
    :target: https://travis-ci.org/cayetanobv/raster2xyz
 .. |PyPI version| image:: https://badge.fury.io/py/raster2xyz.svg
    :target: https://badge.fury.io/py/raster2xyz
+.. |Python versions| image:: https://img.shields.io/pypi/pyversions/raster2xyz.svg?maxAge=2592000
+   :target: https://pypi.python.org/pypi/raster2xyz

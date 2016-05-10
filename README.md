@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cayetanobv/raster2xyz.svg?branch=master)](https://travis-ci.org/cayetanobv/raster2xyz)
 [![PyPI version](https://badge.fury.io/py/raster2xyz.svg)](https://badge.fury.io/py/raster2xyz)
+[![Python versions](https://img.shields.io/pypi/pyversions/raster2xyz.svg?maxAge=2592000)](https://pypi.python.org/pypi/raster2xyz)
 
 Alternative and faster (vectorized) version of gdal2xyz.py (https://svn.osgeo.org/gdal/trunk/gdal/swig/python/scripts/gdal2xyz.py)
 
