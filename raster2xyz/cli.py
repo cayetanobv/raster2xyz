@@ -20,7 +20,7 @@
 #
 
 import argparse
-from raster2xyz import Raster2xyz
+from .raster2xyz import Raster2xyz
 
 
 def run():
