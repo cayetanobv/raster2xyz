@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/usr/bin/env sh
 #
 #  Regenerate README reStructuredText for PYPI
 #
