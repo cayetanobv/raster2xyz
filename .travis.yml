@@ -1,19 +1,23 @@
 language: python
 python:
   - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
 before_install:
   - sudo add-apt-repository -y ppa:ubuntugis/ppa
   - sudo apt-get update -qq
   - sudo apt-get install -qq python-numpy
   - sudo apt-get install -qq python-pip
-  - sudo apt-get install -y gdal-bin libgdal1h libgdal-dev
-  - export CFLAGS=$(gdal-config --cflags)
-  - export GDALVERSION=$(gdal-config --version)
+  - sudo apt-get install -y gdal-bin libgdal20 libgdal-dev
+  - sudo apt-get install -y python-gdal python3-gdal
+  # - export CFLAGS=$(gdal-config --cflags)
+  # - export GDALVERSION=$(gdal-config --version)
 install:
   # - "pip install -r requirements.txt"
   - pip install numpy
   - pip install pandas
-  - pip install GDAL==$GDALVERSION
+  # - pip install GDAL==$GDALVERSION
   - pip install .
 script:
   - raster2xyz -h
