@@ -15,7 +15,7 @@ Builded on top of GDAL, Numpy and Pandas.
 Install
 -------
 
-Instal from `PYPI <https://pypi.python.org/pypi/raster2xyz>`__:
+Install from `PYPI <https://pypi.python.org/pypi/raster2xyz>`__:
 
 ::
 

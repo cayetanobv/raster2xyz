@@ -12,7 +12,7 @@ Builded on top of GDAL, Numpy and Pandas.
 - output file: [ASCII Gridded XYZ](http://www.gdal.org/frmt_xyz.html)
 
 ## Install
-Instal from [PYPI](https://pypi.python.org/pypi/raster2xyz):
+Install from [PYPI](https://pypi.python.org/pypi/raster2xyz):
 ```
 $ pip install raster2xyz
 ```
