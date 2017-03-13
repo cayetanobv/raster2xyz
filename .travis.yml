@@ -9,7 +9,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq python-numpy
   - sudo apt-get install -qq python-pip
-  - sudo apt-get install -y gdal-bin libgdal20 libgdal-dev
+  - sudo apt-get install -y gdal-bin libgdal1h libgdal-dev
   - sudo apt-get install -y python-gdal python3-gdal
   # - export CFLAGS=$(gdal-config --cflags)
   # - export GDALVERSION=$(gdal-config --version)
