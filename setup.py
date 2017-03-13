@@ -18,7 +18,7 @@ with open('README.rst', 'r') as f:
 
 setup(
     name='raster2xyz',
-    version='0.1.1',
+    version='0.1.2',
 
     description='Alternative and faster (vectorized) version of gdal2xyz.py',
     long_description=long_description,
@@ -43,6 +43,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Operating System :: OS Independent',
         'Topic :: Scientific/Engineering :: GIS'
     ],
